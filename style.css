@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s ease;
+
+
+}
+
+
+
+
+
+:root{
+  --main-color:#fff;
+  --second-color:red;
+}
+
+body{
+  background: black;
+  scroll-behavior: smooth;
+  transition: transform 0,5s cubic-bezier(0.4, 0, 0.2, 1);
+ 
+}
+
+header{
+  color: transparent;
+  display: flex;
+  margin-left: 20px;
+  justify-content: end;
+}
+header img{
+  width: 80px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+nav{
+  padding: 20px;
+}
+nav a{
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  color: var(--main-color);
+  margin-left: 20px;
+  transition: all 0.3s ease;
+}
+
+nav a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-color);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0,3s ease-out;
+}
+
+nav a:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+
+}
+
+button{
+  transition: all 0.3s ease;
+}
+
+
+nav a:hover{
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+  color: var(--second-color);
+}
+
+
+
+
+.principal {
+  margin: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal img {
+  width: 350px; /* keep the width relatively small */
+  height: 400px; /* increase the height to make it more elongated */
+  border-radius: 50%; /* add a border radius to make it oval */
+  margin-right: 20px; /* add some space between the image and the text */
+  border: 3px solid var(--second-color);
+  transition: all 0.3s ease;
+}
+
+.principal img:hover{
+  transform: scale(1.1);
+}
+
+.principal .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.principal h1, .principal h2 {
+  margin: 0; /* remove default margin */
+}
+
+.principal button {
+  margin-top: 20px; /* add some space between the h2 and the buttons */
+}
+
+.principal{
+  color: var(--main-color);
+}
+.principal h1{
+  margin-bottom: 20px;
+}
+
+.principal strong{
+  color: var(--second-color);
+}
+
+section .redes-sociales{
+  margin-top: 20px;
+}
+
+
+
+.redes-sociales:hover{
+  cursor: pointer;
+}
+
+.redes-sociales a:hover{
+  color: var(--second-color);
+}
+
+.redes-sociales{
+  border-radius: 20px;
+}
+
+.redes-sociales a{
+  color: var(--main-color);
+  font-size: 20px;
+  padding: 7px;
+}
+
+.principal button{
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 10px 50px 10px 50px;
+  margin-right: 10px;
+ 
+}
+.btn1{
+  background-color: var(--second-color); /* set the button background color */
+  color: #fff; /* set the button text color */
+  border: none; /* remove the button border */
+  padding: 10px 20px; /* add some padding to the button */
+  font-size: 18px; /* set the button font size */
+  cursor: pointer; /* set the button cursor to a pointer */
+}
+
+.btn2{
+  background-color: transparent; /* set the button background color */
+  color: #fff; /* set the button text color */
+  border: 1px solid  var(--second-color);/* remove the button border */
+  padding: 10px 20px; /* add some padding to the button */
+  font-size: 18px; /* set the button font size */
+  cursor: pointer; /* set the button cursor to a pointer */
+}
+
+.btn1:hover{
+  background-color: transparent;
+  border: 1px solid var(--second-color);
+  transform: scale(1.1);
+}
+
+.btn2:hover {
+  background-color: #c30404; /* set the hover button background color */
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+.habilidades {
+  padding: 50px;
+  background-color: #f7f7f7;
+}
+
+.habilidades h2, h3{
+  color: var(--second-color);
+}
+
+.habilidades h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cartas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carta {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+}
+
+.carta:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.carta img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+
+.carta img:hover{
+  transform: scale(1.1);
+}
+
+.carta h3 {
+  margin-top: 10px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carta p {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s ease;
+
+
+}
+
+
+
+
+
+:root{
+  --main-color:#fff;
+  --second-color:red;
+}
+
+body{
+  background: black;
+  scroll-behavior: smooth;
+  transition: transform 0,5s cubic-bezier(0.4, 0, 0.2, 1);
+ 
+}
+
+header{
+  color: transparent;
+  display: flex;
+  margin-left: 20px;
+  justify-content: end;
+}
+header img{
+  width: 80px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+nav{
+  padding: 20px;
+}
+nav a{
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  color: var(--main-color);
+  margin-left: 20px;
+  transition: all 0.3s ease;
+}
+
+nav a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-color);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0,3s ease-out;
+}
+
+nav a:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+
+}
+
+button{
+  transition: all 0.3s ease;
+}
+
+
+nav a:hover{
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+  color: var(--second-color);
+}
+
+
+
+
+.principal {
+  margin: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal img {
+  width: 350px; /* keep the width relatively small */
+  height: 400px; /* increase the height to make it more elongated */
+  border-radius: 50%; /* add a border radius to make it oval */
+  margin-right: 20px; /* add some space between the image and the text */
+  border: 3px solid var(--second-color);
+  transition: all 0.3s ease;
+}
+
+.principal img:hover{
+  transform: scale(1.1);
+}
+
+.principal .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.principal h1, .principal h2 {
+  margin: 0; /* remove default margin */
+}
+
+.principal button {
+  margin-top: 20px; /* add some space between the h2 and the buttons */
+}
+
+.principal{
+  color: var(--main-color);
+}
+.principal h1{
+  margin-bottom: 20px;
+}
+
+.principal strong{
+  color: var(--second-color);
+}
+
+section .redes-sociales{
+  margin-top: 20px;
+}
+
+
+
+.redes-sociales:hover{
+  cursor: pointer;
+}
+
+.redes-sociales a:hover{
+  color: var(--second-color);
+}
+
+.redes-sociales{
+  border-radius: 20px;
+}
+
+.redes-sociales a{
+  color: var(--main-color);
+  font-size: 20px;
+  padding: 7px;
+}
+
+.principal button{
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 10px 50px 10px 50px;
+  margin-right: 10px;
+ 
+}
+.btn1{
+  background-color: var(--second-color); /* set the button background color */
+  color: #fff; /* set the button text color */
+  border: none; /* remove the button border */
+  padding: 10px 20px; /* add some padding to the button */
+  font-size: 18px; /* set the button font size */
+  cursor: pointer; /* set the button cursor to a pointer */
+}
+
+.btn2{
+  background-color: transparent; /* set the button background color */
+  color: #fff; /* set the button text color */
+  border: 1px solid  var(--second-color);/* remove the button border */
+  padding: 10px 20px; /* add some padding to the button */
+  font-size: 18px; /* set the button font size */
+  cursor: pointer; /* set the button cursor to a pointer */
+}
+
+.btn1:hover{
+  background-color: transparent;
+  border: 1px solid var(--second-color);
+  transform: scale(1.1);
+}
+
+.btn2:hover {
+  background-color: #c30404; /* set the hover button background color */
+  transform: scale(1.1);
+}
+
+/* Add this to the existing CSS code */
+
+/* For screens smaller than 768px (tablets and mobiles) */
+@media (max-width: 768px) {
+  .principal {
+    flex-direction: column;
+    margin: 50px;
+  }
+  .principal img {
+    width: 250px;
+    height: 300px;
+  }
+  .principal .text-container {
+    align-items: center;
+  }
+  .cartas {
+    flex-wrap: wrap;
+  }
+  .carta {
+    width: calc(50% - 20px);
+  }
+}
+
+/* For screens smaller than 480px (mobiles) */
+@media (max-width: 480px) {
+  .principal {
+    margin: 20px;
+  }
+  .principal img {
+    width: 200px;
+    height: 250px;
+  }
+  .carta {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1; /* Add z-index to ensure the label is on top */
+}
+
+.nav-toggle-label span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--main-color);
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-toggle-label span:last-child {
+  margin-bottom: 0;
+}
+
+.nav-toggle:checked ~ ul {
+  display: block;
+}
+
+nav ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--main-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Add z-index to ensure the ul is on top */
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+nav ul li:last-child {
+  margin-bottom: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--second-color);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .nav-toggle:checked ~ ul {
+    display: block;
+  }
+}
